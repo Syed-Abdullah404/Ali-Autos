@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .hide{
+        display: none;
+    }
+    .show{
+        display: block;
+    }
+</style>
+<body>
+    
+    <button id="btn"  onclick="myFunction()">Active</button>
+  
+
+
+    <script>
+        var click=false;
+        function myFunction() {
+            if(!click){
+                click=true;
+                document.getElementById('btn').innerHTML="Deactive";
+            }else{
+                click=false;
+                document.getElementById('btn').innerHTML="Active";
+            }                      
+        }
+    </script>
+</body>
+</html>
